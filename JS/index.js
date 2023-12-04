@@ -18,27 +18,44 @@ const buttonIndietro= document.getElementById("scorrere-indietro");
 
 let upgrade=0;
 
-oggettoImg(images[upgrade])
+// oggetto iesimo dentro all'array
+let imgOggetto=images[upgrade]
+oggettoImg(imgOggetto)
+
+
 // creazione dell'evento click per andare avanti
 
 buttonAvanti.addEventListener("click", function () {
-    if (upgrade < images.length ) {
+    // controllo se upgadre è alla fine
+    if (upgrade === images.length -1 ) {
+        upgrade=0;
+        // console.log(upgrade);
+        oggettoImg(images[upgrade]);
+    } else {
+        // console.log(upgrade);
         upgrade++;
-        console.log(upgrade);
              oggettoImg(images[upgrade]);
-        console.log(upgrade);
-    }
+        // console.log(upgrade)
+    }         
 })
+
+
 // creazione dell'evento click per tornare indietro
 
 buttonIndietro.addEventListener("click", function () {
-    if (upgrade < images.length ) {
+    // controllo se upgrade è all'inizio
+    if (upgrade === 0) {
+        upgrade = images.length -1;
+        // console.log(upgrade);
+        oggettoImg(images[upgrade])
+     } else {
         upgrade--;
         // console.log(upgrade);
              oggettoImg(images[upgrade])
         // console.log(upgrade);
     }
 })
+
 
 // funzione per display prima immagine
 
