@@ -13,9 +13,12 @@
     display: block;
 }
 
-.contenitore{
+#contenitore{
     width: 70%;
     margin: auto;
+    /* debug */
+    height: 400px;
+    background-color: red;
 }
 
 img{
