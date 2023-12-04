@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* layput delle immagini */
+
+.d-nascosta{
+    display: none;
+}
+
+.d-compari{
+    display: block;
+}
+
+.contenitore{
+    width: 70%;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+}
