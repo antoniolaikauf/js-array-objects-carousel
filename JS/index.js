@@ -63,12 +63,14 @@ function oggettoImg(oggettoiesimo) {
     immagineiesima=images[upgrade]
     let card = ` <div>
         <img src="${oggettoiesimo.image}" alt="">
-        <h2>
-            ${oggettoiesimo.title}
-        </h2>
-        <p>
-             ${oggettoiesimo.text}
-        </p>
+        <div class="descrizione">
+            <h2>
+                ${oggettoiesimo.title}
+            </h2>
+            <p>
+                ${oggettoiesimo.text}
+            </p>
+        </div>
     </div>`
     document.getElementById("contenitore-img").innerHTML = card
 }

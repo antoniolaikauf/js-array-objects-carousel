@@ -3,24 +3,53 @@
     margin: 0px;
     box-sizing: border-box;
 }
-/* layput delle immagini */
 
-.d-nascosta{
-    display: none;
-}
-
-.d-compari{
-    display: block;
+#contenitore-img{
+    position: relative;
 }
 
 #contenitore{
     width: 70%;
     margin: auto;
+    position: relative;
     /* debug */
-    height: 400px;
-    background-color: red;
+    /* height: 400px;
+    background-color: red; */
 }
 
 img{
     width: 100%;
 }
+
+.descrizione{
+    position: absolute;
+}
+
+.descrizione{
+    bottom: 40px;
+    color: white;
+}
+
+
+#scorrere-avanti{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 500;
+}
+
+#scorrere-indietro{
+    bottom: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#scorrere-indietro, #scorrere-avanti{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+     border: unset;
+     filter: contrast(0.5);
+ }
