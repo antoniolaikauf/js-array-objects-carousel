@@ -1,36 +1,41 @@
+/* caratteristiche generali */
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-#contenitore-img{
-    position: relative;
-}
-
+/* caratteristiche generali del contenitore con dentro tutti i componenti */
 #contenitore{
+    top: 70px;
     width: 70%;
     margin: auto;
     position: relative;
-    /* debug */
-    /* height: 400px;
-    background-color: red; */
 }
-
+/* caratteristiche img inserita tramite javascript */
 img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.descrizione{
+/* classe inserita tramite javascript */
+.descrizione-img{
     position: absolute;
-}
-
-.descrizione{
     bottom: 40px;
     color: white;
+    text-align: right;
+    right: 0px;
 }
 
-
+/* caratteristiche bottoni */
+#scorrere-indietro, #scorrere-avanti{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+     border: unset;
+     filter: contrast(0.5);
+ }
+/* bottone per scorrere avanti */
 #scorrere-avanti{
     position: absolute;
     top: 10px;
@@ -38,7 +43,7 @@ img{
     transform: translate(-50%);
     z-index: 500;
 }
-
+/* bottone per scorrere indietro */
 #scorrere-indietro{
     bottom: 10px;
     position: absolute;
@@ -46,10 +51,6 @@ img{
     transform: translate(-50%);
 }
 
-#scorrere-indietro, #scorrere-avanti{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-     border: unset;
-     filter: contrast(0.5);
+ #contenitore-img> div{
+    height: 400px;
  }
